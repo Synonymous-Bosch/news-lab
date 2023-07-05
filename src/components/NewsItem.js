@@ -1,8 +1,8 @@
 import React from 'react';
 
-const NewsItem = () => {
+const NewsItem = ({story}) => {
   return (
-    <p>Hello NewsItem</p>
+    <a href={story.url}>{story.title}</a>
   )
 }
 
